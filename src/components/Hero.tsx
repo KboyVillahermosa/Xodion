@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useCallback } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { MousePointer2, Accessibility } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const avatars = [
     { name: 'Cyra', color: '#8B5CF6', x: '15%', y: '20%', delay: 0, showOnMobile: false },
@@ -279,9 +280,11 @@ const Hero: React.FC = () => {
                             and deliver results to your business
                         </p>
 
-                        <button className="bg-indigo-600 text-white text-lg font-bold px-10 py-4 rounded-full shadow-[0_4px_14px_0_rgba(79,70,229,0.39)] hover:shadow-[0_6px_20px_rgba(79,70,229,0.23)] hover:bg-indigo-700 hover:-translate-y-0.5 transition-all">
-                            Talk to an expert today
-                        </button>
+                        <Link to="/contact">
+                            <button className="bg-indigo-600 text-white text-lg font-bold px-10 py-4 rounded-full shadow-[0_4px_14px_0_rgba(79,70,229,0.39)] hover:shadow-[0_6px_20px_rgba(79,70,229,0.23)] hover:bg-indigo-700 hover:-translate-y-0.5 transition-all">
+                                Talk to an expert today
+                            </button>
+                        </Link>
                     </motion.div>
                 </div>
 
