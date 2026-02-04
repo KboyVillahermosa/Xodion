@@ -29,12 +29,17 @@ const Navbar: React.FC = () => {
                         <Link to="/about" className="text-gray-500 hover:text-gray-900 font-medium transition-colors">
                             About
                         </Link>
+                        <Link to="/contact" className="text-gray-500 hover:text-gray-900 font-medium transition-colors">
+                            Contact
+                        </Link>
                     </div>
 
                     <div className="hidden md:block">
-                        <button className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2.5 rounded-full font-medium transition-all hover:-translate-y-0.5 hover:shadow-xl hover:from-indigo-700 hover:to-purple-700">
-                            Let's Talk
-                        </button>
+                        <Link to="/contact">
+                            <button className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2.5 rounded-full font-medium transition-all hover:-translate-y-0.5 hover:shadow-xl hover:from-indigo-700 hover:to-purple-700">
+                                Let's Talk
+                            </button>
+                        </Link>
                     </div>
 
                     {/* Mobile Toggle */}
@@ -92,17 +97,25 @@ const Navbar: React.FC = () => {
                                     >
                                         About
                                     </Link>
+                                    <Link
+                                        to="/contact"
+                                        className="text-gray-700 hover:text-indigo-600 font-medium text-lg transition-colors"
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        Contact
+                                    </Link>
 
                                 </nav>
 
                                 {/* CTA Button */}
                                 <div className="mt-auto mb-8">
-                                    <button
-                                        className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 rounded-full font-medium hover:from-indigo-700 hover:to-purple-700 transition-all"
-                                        onClick={() => setIsOpen(false)}
-                                    >
-                                        Let's Talk
-                                    </button>
+                                    <Link to="/contact" onClick={() => setIsOpen(false)}>
+                                        <button
+                                            className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 rounded-full font-medium hover:from-indigo-700 hover:to-purple-700 transition-all"
+                                        >
+                                            Let's Talk
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </motion.div>

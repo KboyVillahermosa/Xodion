@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
     return (
@@ -48,14 +49,14 @@ const Footer: React.FC = () => {
                     <div>
                         <h4 className="font-heading font-bold text-base sm:text-lg text-gray-900 mb-4 sm:mb-6">Quick Links</h4>
                         <ul className="space-y-2 sm:space-y-3">
-                            {['About Us', 'Services', 'Portfolio', 'Roadmap', 'Contact'].map((link) => (
+                            {['About', 'Services', 'Portfolio', 'Roadmap', 'Contact'].map((link) => (
                                 <li key={link}>
-                                    <a
-                                        href={`#${link.toLowerCase().replace(' ', '-')}`}
+                                    <Link
+                                        to={link === 'About' ? '/about' : link === 'Contact' ? '/contact' : `/#${link.toLowerCase().replace(' ', '-')}`}
                                         className="text-sm sm:text-base text-gray-600 hover:text-indigo-600 transition-colors duration-200 inline-block hover:translate-x-1 transform"
                                     >
-                                        {link}
-                                    </a>
+                                        {link === 'About' ? 'About Us' : link}
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
