@@ -97,7 +97,7 @@ const Roadmap: React.FC = () => {
                                 <div className="flex-1 flex flex-col">
                                     {/* Logo */}
                                     <div className="mb-6">
-                                        <img src="/logo.png" alt="LimeHills" className="h-8 w-auto" />
+                                        <img src="/logo.png" alt="Xodion" className="h-8 w-auto" />
                                     </div>
 
                                     {/* Title */}

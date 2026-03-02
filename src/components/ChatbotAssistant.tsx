@@ -15,7 +15,7 @@ const ChatbotAssistant: React.FC = () => {
     const [messages, setMessages] = useState<Message[]>([
         {
             id: 1,
-            text: "Hi! I'm the LimeHills AI assistant. I can answer questions about our services, team, projects, and more. How can I help you today?",
+            text: "Hi! I'm the Xodion AI assistant. I can answer questions about our services, team, projects, and more. How can I help you today?",
             sender: 'bot',
             timestamp: new Date()
         }
@@ -120,7 +120,7 @@ const ChatbotAssistant: React.FC = () => {
                                 <Bot size={24} />
                             </div>
                             <div className="flex-1">
-                                <h3 className="font-semibold">LimeHills Assistant</h3>
+                                <h3 className="font-semibold text-white">Xodion Assistant</h3>
                                 <p className="text-xs text-white/80">Online • Ready to help</p>
                             </div>
                         </div>
@@ -176,7 +176,7 @@ const ChatbotAssistant: React.FC = () => {
                                     value={inputValue}
                                     onChange={(e) => setInputValue(e.target.value)}
                                     onKeyPress={handleKeyPress}
-                                    placeholder="Ask me anything about LimeHills..."
+                                    placeholder="Ask me anything about Xodion..."
                                     className="flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                                 />
                                 <button

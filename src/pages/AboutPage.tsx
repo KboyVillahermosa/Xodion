@@ -12,7 +12,7 @@ const teamMembers = [
         bio: 'Visionary leader with 15+ years in digital transformation and web accessibility.',
         linkedin: '#',
         twitter: '#',
-        email: 'sarah@limehills.com'
+        email: 'sarah@xodion.com'
     },
     {
         name: 'Michael Chen',
@@ -21,7 +21,7 @@ const teamMembers = [
         bio: 'Full-stack architect specializing in scalable web solutions and performance optimization.',
         linkedin: '#',
         twitter: '#',
-        email: 'michael@limehills.com'
+        email: 'michael@xodion.com'
     },
     {
         name: 'Emily Rodriguez',
@@ -30,7 +30,7 @@ const teamMembers = [
         bio: 'Strategic marketing leader driving brand growth and digital innovation.',
         linkedin: '#',
         twitter: '#',
-        email: 'emily@limehills.com'
+        email: 'emily@xodion.com'
     },
     {
         name: 'David Park',
@@ -39,7 +39,7 @@ const teamMembers = [
         bio: 'WordPress and Drupal expert with a passion for clean, maintainable code.',
         linkedin: '#',
         twitter: '#',
-        email: 'david@limehills.com'
+        email: 'david@xodion.com'
     },
     {
         name: 'Philip',
@@ -48,7 +48,7 @@ const teamMembers = [
         bio: 'WordPress specialist delivering robust and scalable solutions for complex projects.',
         linkedin: '#',
         twitter: '#',
-        email: 'philip@limehills.com'
+        email: 'philip@xodion.com'
     }
 ];
 

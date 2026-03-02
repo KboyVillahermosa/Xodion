@@ -54,7 +54,7 @@ const AboutUs: React.FC = () => {
                         {/* Description Paragraphs */}
                         <div className="space-y-4 mb-8">
                             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                                At Limehills, we pride ourselves on our ability to translate your organisation's strategy into an engaging digital platform that not only captures attention but also converts your target audience into loyal customers.
+                                At Xodion, we pride ourselves on our ability to translate your organisation's strategy into an engaging digital platform that not only captures attention but also converts your target audience into loyal customers.
                             </p>
                             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                                 We're small enough to provide personalised care and attention to your project, yet our team boasts extensive experience and expertise, ensuring that we deliver top-notch results every time. With us, you can trust that your vision will be brought to life with precision and passion.

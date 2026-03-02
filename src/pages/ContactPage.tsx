@@ -50,7 +50,7 @@ const ContactPage: React.FC = () => {
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-gray-900">Email Us</h3>
-                                        <p className="text-gray-600">hello@limehills.com</p>
+                                        <p className="text-gray-600">hello@xodion.com</p>
                                     </div>
                                 </div>
 

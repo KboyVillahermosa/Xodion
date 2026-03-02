@@ -1,10 +1,10 @@
 export const companyData = {
     company: {
-        name: 'LimeHills',
+        name: 'Xodion',
         description: 'Creating human-focused digital experiences that drive results for forward-thinking organizations.',
         founded: '2010',
         location: 'City Time Square 2, Mandaue',
-        email: 'hello@limehills.com',
+        email: 'hello@xodion.com',
         phone: '+1 (234) 567-890'
     },
     services: [
@@ -51,7 +51,7 @@ export const companyData = {
         },
         {
             question: 'how can i contact you',
-            answer: 'You can reach us at hello@limehills.com or call us at +1 (234) 567-890. We\'re located at City Time Square 2, Mandaue.'
+            answer: "You can reach us at hello@xodion.com or call us at +1 (234) 567-890. We're located at City Time Square 2, Mandaue.",
         },
         {
             question: 'who are your team members',
@@ -70,8 +70,8 @@ export const companyData = {
             answer: 'Our process includes 4 key phases: 1) Strategy - Digital foundation and planning, 2) UX/UI Design - Beautiful and functional design, 3) Web Development - Technical excellence with WordPress/Drupal, 4) Ongoing Support - Continuous care and optimization.'
         },
         {
-            question: 'when was limehills founded',
-            answer: 'LimeHills was founded in 2010. We have over a decade of experience in digital transformation and web development.'
+            question: 'when was xodion founded',
+            answer: 'Xodion was founded in 2010. We have over a decade of experience in digital transformation and web development.',
         }
     ]
 };
@@ -82,12 +82,12 @@ export const findAnswer = (userQuestion: string): string => {
 
     // Greetings
     if (question === 'hi' || question === 'hello' || question === 'hey' || question === 'greetings') {
-        return "Hello! How can I help you today? I can answer questions about LimeHills' services, team, and projects.";
+        return "Hello! How can I help you today? I can answer questions about Xodion's services, team, and projects.";
     }
 
     // Gratitude
     if (question.includes('thank') || question.includes('thanks')) {
-        return "You're welcome! If you have any more questions about LimeHills, feel free to ask.";
+        return "You're welcome! If you have any more questions about Xodion, feel free to ask.";
     }
 
     // Check FAQs
@@ -98,7 +98,7 @@ export const findAnswer = (userQuestion: string): string => {
     }
 
     // Check for 'About' queries
-    if (question.includes('about') || question.includes('what is limehills')) {
+    if (question.includes('about') || question.includes('what is xodion')) {
         return `${companyData.company.name} is about ${companyData.company.description} We were founded in ${companyData.company.founded} and have been delivering excellence ever since.`;
     }
 
@@ -137,5 +137,5 @@ export const findAnswer = (userQuestion: string): string => {
     }
 
     // Default response for unrelated questions
-    return "I'm sorry, but I can only answer questions related to LimeHills, our services, team, and projects. Please ask me about our company, services, team members, or how we can help you!";
+    return "I'm sorry, but I can only answer questions related to Xodion, our services, team, and projects. Please ask me about our company, services, team members, or how we can help you!";
 };

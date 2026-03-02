@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
                     {/* Company Info */}
                     <div className="space-y-4">
-                        <img src="/logo.png" alt="Limehills" className="h-10 w-auto" />
+                        <img src="/logo.png" alt="Xodion" className="h-10 w-auto" />
                         <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                             Creating human-focused digital experiences that drive results for forward-thinking organizations.
                         </p>
@@ -85,8 +85,8 @@ const Footer: React.FC = () => {
                         <ul className="space-y-3 sm:space-y-4">
                             <li className="flex items-start gap-3 text-gray-600 text-sm sm:text-base">
                                 <Mail size={20} className="text-indigo-600 mt-0.5 flex-shrink-0" />
-                                <a href="mailto:support@limehills.tech" className="hover:text-indigo-600 transition-colors break-all">
-                                    support@limehills.tech
+                                <a href="mailto:support@xodion.tech" className="hover:text-indigo-600 transition-colors break-all">
+                                    support@xodion.tech
                                 </a>
                             </li>
                             <li className="flex items-start gap-3 text-gray-600 text-sm sm:text-base">
@@ -110,7 +110,7 @@ const Footer: React.FC = () => {
                 <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-200">
                     <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
                         <p className="text-gray-600 text-xs sm:text-sm">
-                            © {new Date().getFullYear()} LimeHills. All rights reserved.
+                            © {new Date().getFullYear()} Xodion. All rights reserved.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
                             <a href="#privacy" className="text-gray-600 hover:text-indigo-600 text-xs sm:text-sm transition-colors">
