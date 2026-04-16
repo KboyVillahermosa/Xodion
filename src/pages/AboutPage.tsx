@@ -1,57 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import GallerySlider from '../components/GallerySlider';
 import { motion } from 'framer-motion';
-import { Linkedin, Twitter, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
-const teamMembers = [
-    {
-        name: 'Sarah Johnson',
-        role: 'CEO & Founder',
-        image: '/ceoprofile.png',
-        bio: 'Visionary leader with 15+ years in digital transformation and web accessibility.',
-        linkedin: '#',
-        twitter: '#',
-        email: 'xodiontech@gmail.com'
-    },
-    {
-        name: 'Michael Chen',
-        role: 'Chief Technology Officer',
-        image: '/ctoprofile.png',
-        bio: 'Full-stack architect specializing in scalable web solutions and performance optimization.',
-        linkedin: '#',
-        twitter: '#',
-        email: 'xodiontech@gmail.com'
-    },
-    {
-        name: 'Emily Rodriguez',
-        role: 'Chief Marketing Officer',
-        image: '/cmo.png',
-        bio: 'Strategic marketing leader driving brand growth and digital innovation.',
-        linkedin: '#',
-        twitter: '#',
-        email: 'xodiontech@gmail.com'
-    },
-    {
-        name: 'David Park',
-        role: 'Head Developer',
-        image: '/head-developer.png',
-        bio: 'WordPress and Drupal expert with a passion for clean, maintainable code.',
-        linkedin: '#',
-        twitter: '#',
-        email: 'xodiontech@gmail.com'
-    },
-    {
-        name: 'Philip',
-        role: 'Head of WordPress Development',
-        image: '/philip.png',
-        bio: 'WordPress specialist delivering robust and scalable solutions for complex projects.',
-        linkedin: '#',
-        twitter: '#',
-        email: 'xodiontech@gmail.com'
-    }
-];
 
 const AboutPage: React.FC = () => {
     return (

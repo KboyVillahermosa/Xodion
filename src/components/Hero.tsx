@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useCallback } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { MousePointer2, Accessibility, Bot } from 'lucide-react';
+import { MousePointer2, Bot } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const avatars = [
