@@ -3,18 +3,12 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 
 const partners = [
-    { name: 'BigasanHub', logo: '/logobigasanhub.png' },
-    { name: 'Eagles', logo: '/eagles.png' },
-    { name: 'Jams Branded Collection', logo: '/jamslogo.png' },
-    { name: 'Alin', logo: '/alin.png' },
-    { name: 'BMVPS', logo: '/bmvps.png' },
-
-    // Repeat for loop effect
-    { name: 'BigasanHub', logo: '/logobigasanhub.png' },
-    { name: 'Eagles', logo: '/eagles.png' },
-    { name: 'Jams Branded Collection', logo: '/jamslogo.png' },
-    { name: 'Alin', logo: '/alin.png' },
-    { name: 'BMVPS', logo: '/bmvps.png' },
+    { name: 'Mamasusan BBQ', logo: '/mamasusanlogo.jpg' },
+    { name: 'Shared Marketing MLM System', logo: '/sharedlogo.png' },
+    { name: 'Mamasusan BBQ', logo: '/mamasusanlogo.jpg' },
+    { name: 'Shared Marketing MLM System', logo: '/sharedlogo.png' },
+    { name: 'Mamasusan BBQ', logo: '/mamasusanlogo.jpg' },
+    { name: 'Shared Marketing MLM System', logo: '/sharedlogo.png' },
 ];
 
 const Partners: React.FC = () => {

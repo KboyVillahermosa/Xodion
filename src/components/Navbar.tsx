@@ -8,10 +8,10 @@ const Navbar: React.FC = () => {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 w-full h-20 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+            <nav className="fixed top-0 left-0 w-full h-24 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
                 <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
                     <Link to="/" className="flex items-center">
-                        <img src="/logo.png" alt="Xodion" className="h-10 w-auto" />
+                        <img src="/logo1.png" alt="Xodion" className="h-18 w-auto" />
                     </Link>
 
                     {/* Desktop Menu */}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const AboutUs: React.FC = () => {
     return (
@@ -20,7 +21,7 @@ const AboutUs: React.FC = () => {
                             clipPath: 'polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%)'
                         }}>
                             <img
-                                src="/s3.jpg"
+                                src="/s17.jpg"
                                 alt="Team collaboration"
                                 className="w-full h-[600px] object-cover"
                             />
@@ -63,12 +64,12 @@ const AboutUs: React.FC = () => {
 
                         {/* CTA Button */}
                         <div>
-                            <a
-                                href="#"
+                            <Link
+                                to="/about"
                                 className="inline-block px-6 py-3 border-2 border-indigo-600 text-indigo-600 font-bold rounded-full hover:bg-indigo-600 hover:text-white transition-all duration-300 text-xs md:text-sm"
                             >
                                 Learn more about us
-                            </a>
+                            </Link>
                         </div>
                     </motion.div>
 

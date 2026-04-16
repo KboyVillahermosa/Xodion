@@ -3,62 +3,37 @@ import Layout from '../components/Layout';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 
-const projects = [
+interface Project {
+    id: number;
+    title: string;
+    subtitle: string;
+    description: string;
+    image: string;
+    liveUrl: string;
+    tags: string[];
+    logo?: string;
+}
+
+const projects: Project[] = [
     {
         id: 1,
-        title: 'The George Institute',
-        subtitle: 'for Global Health',
-        description: 'The George Institute for Global Health partnered with Marumeo to transform its fragmented multi-site setup into a unified global platform. Over seven years and multiple project phases, we migrated more than 15,000 pages, streamlined complex data structures, and eventually consolidated five regional sites into one authoritative Drupal 10 platform. The result is a...',
-        image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=300&fit=crop',
-        liveUrl: '#',
-        tags: ['HEALTH RESEARCH', 'NOT FOR PROFIT']
-    },
-    {
-        id: 2,
-        title: 'The Centre for Sex and Gender Equity in Health and Medicine',
-        subtitle: 'for Global Health',
-        description: 'A future-focused platform for the Centre for Sex and Gender Equity in Health and Medicine, built to drive systemic change. How sex and gender are considered in research, education, and clinical care. From a modern user-friendly back-end system to a beautifully designed and culturally empowered front-end, the site continues to grow.',
-        image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=300&fit=crop',
-        liveUrl: '#',
-        tags: ['HEALTH RESEARCH', 'NOT FOR PROFIT']
-    },
-    {
-        id: 3,
-        title: 'HeatNexus',
-        subtitle: 'Global Heat Platform',
-        description: 'A multi-year, multi-country charity platform that empowers HeatNexus to showcase global climate research and tackle the health impacts of extreme heat.',
-        image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop',
-        liveUrl: '#',
-        tags: ['HEALTH RESEARCH', 'NOT FOR PROFIT']
-    },
-    {
-        id: 4,
-        title: 'Clinical Trials Hub',
-        subtitle: 'Health Translation',
-        description: 'A straightforward, responsive site was reimagined into My Clinical Trial Partner, a free interactive tool that helps researchers plan, manage, and collaborate on clinical trials with clarity. Developed as part of a trial project, the hub combines user strategy, flexible tools, and high performance to support the future of clinical research.',
-        image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop',
-        liveUrl: '#',
-        tags: ['HEALTH RESEARCH', 'NOT FOR PROFIT']
-    },
-    {
-        id: 5,
-        title: 'BigasanHub',
+        title: 'Mamasusan BBQ',
         subtitle: 'Inventory Management System',
-        description: 'A comprehensive inventory management system designed specifically for rice distribution businesses. BigasanHub streamlines stock tracking, bundle management, and sales operations with real-time analytics. The platform provides an intuitive interface for managing rice inventory, tracking bundles, and generating detailed reports for business insights.',
-        image: '/bigasanhub.png',
-        logo: '/logobigasanhub.png',
+        description: 'A comprehensive inventory management system designed to streamline operations for Mamasusan BBQ. This system optimizes stock tracking, supply management, and provides real-time analytics to ensure efficient business workflows.',
+        image: '/project1.png',
+        logo: '/mamasusanlogo.jpg',
         liveUrl: '#',
         tags: ['INVENTORY', 'MANAGEMENT SYSTEM']
     },
     {
-        id: 6,
-        title: 'Jams Branded Collection',
-        subtitle: 'Bundle Inventory System',
-        description: 'An innovative inventory management solution for jams and preserves bundling operations. The system efficiently manages product bundles, tracks stock levels, and optimizes distribution workflows. Built with modern technologies to provide seamless inventory control and comprehensive reporting for jams collection management.',
-        image: '/jams.jpg',
-        logo: '/jamslogo.png',
+        id: 2,
+        title: 'Shared Marketing MLM System',
+        subtitle: 'Networking Platform',
+        description: 'A robust multi-level marketing (MLM) platform built for shared marketing initiatives. The system features advanced networking tools, member hierarchy management, and precise commission tracking to empower growth and transparency.',
+        image: '/project2.png',
+        logo: '/sharedlogo.png',
         liveUrl: '#',
-        tags: ['INVENTORY', 'E-COMMERCE']
+        tags: ['NETWORKING', 'MLM SYSTEM']
     }
 ];
 

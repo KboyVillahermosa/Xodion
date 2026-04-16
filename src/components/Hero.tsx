@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useCallback } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { MousePointer2, Accessibility } from 'lucide-react';
+import { MousePointer2, Accessibility, Bot } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const avatars = [
@@ -206,30 +206,30 @@ const Hero: React.FC = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h4 className="text-gray-500 text-sm font-semibold uppercase tracking-wider mb-4">Experts and Specialists</h4>
-                        <div className="flex flex-col gap-8">
-                            {/* PHP */}
+                        <h4 className="text-gray-500 text-sm font-semibold uppercase tracking-wider mb-4">Core Specializations</h4>
+                        <div className="flex flex-col gap-6">
+                            {/* Web & Mobile */}
                             <div className="flex items-center gap-4">
-                                <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png" alt="PHP" className="h-10 w-auto" />
+                                <div className="w-10 h-10 flex-shrink-0 rounded-full bg-indigo-100 flex items-center justify-center">
+                                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="App Dev" className="h-6 w-auto" />
                                 </div>
-                                <span className="text-xl font-bold text-[#777BB3]">PHP Libraries</span>
+                                <span className="text-lg font-bold text-gray-800">Web & Mobile</span>
                             </div>
 
-                            {/* React */}
+                            {/* AI Integration */}
                             <div className="flex items-center gap-4">
-                                <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React" className="h-10 w-auto" />
+                                <div className="w-10 h-10 flex-shrink-0 rounded-full bg-purple-100 flex items-center justify-center">
+                                    <Bot size={20} className="text-purple-600" />
                                 </div>
-                                <span className="text-xl font-bold text-[#61DAFB]">ReactJS</span>
+                                <span className="text-lg font-bold text-gray-800">AI Integration</span>
                             </div>
 
-                            {/* Web Accessibility */}
+                            {/* UI/UX Design */}
                             <div className="flex items-center gap-4">
-                                <div className="w-12 h-12 flex-shrink-0 rounded-full bg-[#1e3a8a] flex items-center justify-center">
-                                    <Accessibility className="w-8 h-8 text-white" />
+                                <div className="w-10 h-10 flex-shrink-0 rounded-full bg-pink-100 flex items-center justify-center">
+                                    <MousePointer2 size={20} className="text-pink-600" />
                                 </div>
-                                <span className="text-xl font-bold text-[#1e3a8a]">Web Accessibility</span>
+                                <span className="text-lg font-bold text-gray-800">UI/UX Design</span>
                             </div>
                         </div>
                     </motion.div>
@@ -250,24 +250,6 @@ const Hero: React.FC = () => {
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <div className="flex justify-center mb-8">
-                            {/* Avatars row */}
-                            {[
-                                '/ceoprofile.png',
-                                '/ctoprofile.png',
-                                '/cmo.png',
-                                '/head-developer.png',
-                                '/philip.png'
-                            ].map((src, index) => (
-                                <img
-                                    key={index}
-                                    src={src}
-                                    alt="Team Member"
-                                    className="w-10 h-10 md:w-12 md:h-12 rounded-full border-[3px] border-white -ml-3 first:ml-0 object-cover bg-gray-100"
-                                />
-                            ))}
-                        </div>
-
                         <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl tracking-tight mb-6 text-gray-900 leading-tight">
                             Human focused <br />
                             <span className="text-indigo-600">websites for</span> <br />

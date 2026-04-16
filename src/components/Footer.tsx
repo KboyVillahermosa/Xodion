@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
                     {/* Company Info */}
                     <div className="space-y-4">
-                        <img src="/logo.png" alt="Xodion" className="h-10 w-auto" />
+                        <img src="/logo1.png" alt="Xodion" className="h-20 w-auto" />
                         <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                             Creating human-focused digital experiences that drive results for forward-thinking organizations.
                         </p>
@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
                     <div>
                         <h4 className="font-heading font-bold text-base sm:text-lg text-gray-900 mb-4 sm:mb-6">Services</h4>
                         <ul className="space-y-2 sm:space-y-3">
-                            {['Web Development', 'WordPress', 'Drupal', 'Accessibility', 'Performance'].map((service) => (
+                            {['Web Development', 'Mobile App Development', 'AI Integration', 'UI/UX Design'].map((service) => (
                                 <li key={service}>
                                     <a
                                         href="#services"
@@ -85,8 +85,8 @@ const Footer: React.FC = () => {
                         <ul className="space-y-3 sm:space-y-4">
                             <li className="flex items-start gap-3 text-gray-600 text-sm sm:text-base">
                                 <Mail size={20} className="text-indigo-600 mt-0.5 flex-shrink-0" />
-                                <a href="mailto:support@xodion.tech" className="hover:text-indigo-600 transition-colors break-all">
-                                    support@xodion.tech
+                                <a href="mailto:xodiontech@gmail.com" className="hover:text-indigo-600 transition-colors break-all">
+                                    xodiontech@gmail.com
                                 </a>
                             </li>
                             <li className="flex items-start gap-3 text-gray-600 text-sm sm:text-base">
